@@ -2,7 +2,7 @@ import React from 'react';
 
 export interface GlobaleThemeProps {
   isDarkMode: boolean;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export const globalContext = React.createContext<GlobaleThemeProps>({
