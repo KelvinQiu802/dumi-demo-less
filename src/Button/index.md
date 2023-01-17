@@ -2,7 +2,17 @@
 
 ```tsx
 import React from 'react';
-import Button from './index.tsx';
+import GlobalTheme from '../GlobalTheme';
+import Button from './index';
 
-export default () => <Button text="Hello" />;
+export default () => {
+  return (
+    <>
+      <Button text="Hello" />
+      <GlobalTheme isDarkMode={true}>
+        <Button text="World" />
+      </GlobalTheme>
+    </>
+  );
+};
 ```
